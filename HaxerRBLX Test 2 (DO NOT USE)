@@ -1,0 +1,677 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local HaxerGui = Instance.new("ScreenGui")
+local H = Instance.new("Frame")
+local MainScreen = Instance.new("Frame")
+local Text = Instance.new("TextLabel")
+local MinimizeButton = Instance.new("TextButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Bg = Instance.new("Frame")
+local WelcomeScreen = Instance.new("Frame")
+local Text_2 = Instance.new("TextLabel")
+local Line1 = Instance.new("Frame")
+local Line2 = Instance.new("Frame")
+local MainScreen_2 = Instance.new("Frame")
+local Text_3 = Instance.new("TextLabel")
+local HacksScreen = Instance.new("TextButton")
+local GameScreen = Instance.new("TextButton")
+local HacksScreen_2 = Instance.new("Frame")
+local Text_4 = Instance.new("TextLabel")
+local WalkspeedButton = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local LoopedButton = Instance.new("TextButton")
+local JumpPowerButton = Instance.new("TextButton")
+local TextBox_2 = Instance.new("TextBox")
+local LoopedButton_2 = Instance.new("TextButton")
+local GameViewerScreen = Instance.new("Frame")
+local Text_5 = Instance.new("TextLabel")
+
+--Properties:
+
+HaxerGui.Name = "HaxerGui"
+HaxerGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+HaxerGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+HaxerGui.ResetOnSpawn = false
+
+H.Name = "H"
+H.Parent = HaxerGui
+H.AnchorPoint = Vector2.new(0.5, 0.5)
+H.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+H.BorderColor3 = Color3.fromRGB(0, 0, 0)
+H.BorderSizePixel = 0
+H.Position = UDim2.new(0.252808988, 0, 0.456467658, 0)
+H.Size = UDim2.new(0.453807741, 0, 0.0398009941, 0)
+
+MainScreen.Name = "MainScreen"
+MainScreen.Parent = H
+MainScreen.AnchorPoint = Vector2.new(0.5, 0.5)
+MainScreen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainScreen.BackgroundTransparency = 1.000
+MainScreen.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainScreen.BorderSizePixel = 0
+MainScreen.Position = UDim2.new(0.5, 0, 0.50000006, 0)
+MainScreen.Size = UDim2.new(0.99999994, 0, 1.00000012, 0)
+
+Text.Name = "Text"
+Text.Parent = MainScreen
+Text.AnchorPoint = Vector2.new(0.5, 0.5)
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text.BorderSizePixel = 0
+Text.Position = UDim2.new(0.123108633, 0, 0.48776859, 0)
+Text.Size = UDim2.new(0.201513082, 0, -0.789160609, 0)
+Text.Font = Enum.Font.Nunito
+Text.Text = "HaxerRBLX - v0.1"
+Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text.TextScaled = true
+Text.TextSize = 14.000
+Text.TextWrapped = true
+
+MinimizeButton.Name = "MinimizeButton"
+MinimizeButton.Parent = MainScreen
+MinimizeButton.AnchorPoint = Vector2.new(0.5, 0.5)
+MinimizeButton.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+MinimizeButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MinimizeButton.BorderSizePixel = 0
+MinimizeButton.Position = UDim2.new(0.951169193, 0, 0.487768561, 0)
+MinimizeButton.Size = UDim2.new(0.0347360149, 0, 0.789159775, 0)
+MinimizeButton.AutoButtonColor = false
+MinimizeButton.Font = Enum.Font.Nunito
+MinimizeButton.Text = "-"
+MinimizeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MinimizeButton.TextScaled = true
+MinimizeButton.TextSize = 14.000
+MinimizeButton.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = MinimizeButton
+
+Bg.Name = "Bg"
+Bg.Parent = H
+Bg.AnchorPoint = Vector2.new(0.5, 0.5)
+Bg.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Bg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bg.BorderSizePixel = 0
+Bg.Position = UDim2.new(0.499885201, 0, 6.7857585, 0)
+Bg.Size = UDim2.new(1.0002296, 0, 10.7888708, 0)
+
+WelcomeScreen.Name = "WelcomeScreen"
+WelcomeScreen.Parent = Bg
+WelcomeScreen.AnchorPoint = Vector2.new(0.5, 0.5)
+WelcomeScreen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+WelcomeScreen.BackgroundTransparency = 0.800
+WelcomeScreen.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WelcomeScreen.BorderSizePixel = 0
+WelcomeScreen.Position = UDim2.new(0.5, 0, 0.50000006, 0)
+WelcomeScreen.Size = UDim2.new(0.99999994, 0, 1.00000012, 0)
+
+Text_2.Name = "Text"
+Text_2.Parent = WelcomeScreen
+Text_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.BackgroundTransparency = 1.000
+Text_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text_2.BorderSizePixel = 0
+Text_2.Position = UDim2.new(0.499312252, 0, 0.49999997, 0)
+Text_2.Size = UDim2.new(0.775103211, 0, 0.262402117, 0)
+Text_2.Font = Enum.Font.Nunito
+Text_2.Text = "HaxerRBLX"
+Text_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.TextScaled = true
+Text_2.TextSize = 14.000
+Text_2.TextWrapped = true
+
+Line1.Name = "Line1"
+Line1.Parent = WelcomeScreen
+Line1.AnchorPoint = Vector2.new(0.5, 0.5)
+Line1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line1.BorderSizePixel = 0
+Line1.Position = UDim2.new(0.5, 0, 0.349999994, 0)
+Line1.Size = UDim2.new(0, 0, 0.0350000001, 0)
+
+Line2.Name = "Line2"
+Line2.Parent = WelcomeScreen
+Line2.AnchorPoint = Vector2.new(0.5, 0.5)
+Line2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line2.BorderSizePixel = 0
+Line2.Position = UDim2.new(0.5, 0, 0.649999976, 0)
+Line2.Size = UDim2.new(0, 0, 0.0350000001, 0)
+
+MainScreen_2.Name = "MainScreen"
+MainScreen_2.Parent = Bg
+MainScreen_2.AnchorPoint = Vector2.new(0.5, 0.5)
+MainScreen_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainScreen_2.BackgroundTransparency = 1.000
+MainScreen_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainScreen_2.BorderSizePixel = 0
+MainScreen_2.Position = UDim2.new(0.5, 0, 0.50000006, 0)
+MainScreen_2.Size = UDim2.new(0.99999994, 0, 1.00000012, 0)
+MainScreen_2.Visible = false
+
+Text_3.Name = "Text"
+Text_3.Parent = MainScreen_2
+Text_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_3.BackgroundTransparency = 1.000
+Text_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text_3.BorderSizePixel = 0
+Text_3.Position = UDim2.new(0.499312252, 0, 0.159268931, 0)
+Text_3.Size = UDim2.new(0.775103211, 0, 0.103133172, 0)
+Text_3.Font = Enum.Font.Nunito
+Text_3.Text = "Welcome, OnlyTwentyOneCharacters."
+Text_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_3.TextScaled = true
+Text_3.TextSize = 14.000
+Text_3.TextWrapped = true
+
+HacksScreen.Name = "HacksScreen"
+HacksScreen.Parent = MainScreen_2
+HacksScreen.AnchorPoint = Vector2.new(0.5, 0.5)
+HacksScreen.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+HacksScreen.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HacksScreen.BorderSizePixel = 0
+HacksScreen.Position = UDim2.new(0.183637694, 0, 0.50000006, 0)
+HacksScreen.Size = UDim2.new(0.27579087, 0, 0.147519574, 0)
+HacksScreen.Font = Enum.Font.Nunito
+HacksScreen.Text = "Hacks"
+HacksScreen.TextColor3 = Color3.fromRGB(255, 255, 255)
+HacksScreen.TextScaled = true
+HacksScreen.TextSize = 14.000
+HacksScreen.TextWrapped = true
+
+GameScreen.Name = "GameScreen"
+GameScreen.Parent = MainScreen_2
+GameScreen.AnchorPoint = Vector2.new(0.5, 0.5)
+GameScreen.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+GameScreen.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GameScreen.BorderSizePixel = 0
+GameScreen.Position = UDim2.new(0.498624533, 0, 0.50000006, 0)
+GameScreen.Size = UDim2.new(0.27579087, 0, 0.147519574, 0)
+GameScreen.Font = Enum.Font.Nunito
+GameScreen.Text = "Game Viewer"
+GameScreen.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameScreen.TextScaled = true
+GameScreen.TextSize = 14.000
+GameScreen.TextWrapped = true
+
+HacksScreen_2.Name = "HacksScreen"
+HacksScreen_2.Parent = Bg
+HacksScreen_2.AnchorPoint = Vector2.new(0.5, 0.5)
+HacksScreen_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HacksScreen_2.BackgroundTransparency = 1.000
+HacksScreen_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HacksScreen_2.BorderSizePixel = 0
+HacksScreen_2.Position = UDim2.new(0.5, 0, 0.50000006, 0)
+HacksScreen_2.Size = UDim2.new(0.99999994, 0, 1.00000012, 0)
+HacksScreen_2.Visible = false
+
+Text_4.Name = "Text"
+Text_4.Parent = HacksScreen_2
+Text_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Text_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_4.BackgroundTransparency = 1.000
+Text_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text_4.BorderSizePixel = 0
+Text_4.Position = UDim2.new(0.499312252, 0, 0.202349871, 0)
+Text_4.Size = UDim2.new(0.775103211, 0, 0.189295068, 0)
+Text_4.Font = Enum.Font.Nunito
+Text_4.Text = "Hacks"
+Text_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_4.TextScaled = true
+Text_4.TextSize = 14.000
+Text_4.TextWrapped = true
+
+WalkspeedButton.Name = "WalkspeedButton"
+WalkspeedButton.Parent = HacksScreen_2
+WalkspeedButton.AnchorPoint = Vector2.new(0.5, 0.5)
+WalkspeedButton.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+WalkspeedButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WalkspeedButton.BorderSizePixel = 0
+WalkspeedButton.Position = UDim2.new(0.21114707, 0, 0.484334111, 0)
+WalkspeedButton.Size = UDim2.new(0.27579087, 0, 0.116187982, 0)
+WalkspeedButton.Modal = true
+WalkspeedButton.Font = Enum.Font.Nunito
+WalkspeedButton.Text = "Walkspeed (Default is 16)"
+WalkspeedButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+WalkspeedButton.TextScaled = true
+WalkspeedButton.TextSize = 14.000
+WalkspeedButton.TextWrapped = true
+
+TextBox.Parent = WalkspeedButton
+TextBox.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.334202468, 0, 1.44065988, 0)
+TextBox.Size = UDim2.new(0.669537246, 0, 0.49999994, 0)
+TextBox.Visible = false
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.Nunito
+TextBox.PlaceholderColor3 = Color3.fromRGB(200, 200, 200)
+TextBox.PlaceholderText = "Type Number Here"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+LoopedButton.Name = "LoopedButton"
+LoopedButton.Parent = WalkspeedButton
+LoopedButton.AnchorPoint = Vector2.new(0.5, 0.5)
+LoopedButton.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+LoopedButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LoopedButton.BorderSizePixel = 0
+LoopedButton.Position = UDim2.new(0.849991679, 0, 1.44066131, 0)
+LoopedButton.Size = UDim2.new(0.300017089, 0, 0.499999762, 0)
+LoopedButton.Visible = false
+LoopedButton.Font = Enum.Font.Nunito
+LoopedButton.Text = "Looped"
+LoopedButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoopedButton.TextScaled = true
+LoopedButton.TextSize = 14.000
+LoopedButton.TextWrapped = true
+
+JumpPowerButton.Name = "JumpPowerButton"
+JumpPowerButton.Parent = HacksScreen_2
+JumpPowerButton.AnchorPoint = Vector2.new(0.5, 0.5)
+JumpPowerButton.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+JumpPowerButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpPowerButton.BorderSizePixel = 0
+JumpPowerButton.Position = UDim2.new(0.509565473, 0, 0.484334111, 0)
+JumpPowerButton.Size = UDim2.new(0.27579087, 0, 0.116187982, 0)
+JumpPowerButton.Modal = true
+JumpPowerButton.Font = Enum.Font.Nunito
+JumpPowerButton.Text = "Jump Power (Default is 50)"
+JumpPowerButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPowerButton.TextScaled = true
+JumpPowerButton.TextSize = 14.000
+JumpPowerButton.TextWrapped = true
+
+TextBox_2.Parent = JumpPowerButton
+TextBox_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextBox_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(0.334202468, 0, 1.44065988, 0)
+TextBox_2.Size = UDim2.new(0.669537246, 0, 0.49999994, 0)
+TextBox_2.Visible = false
+TextBox_2.ClearTextOnFocus = false
+TextBox_2.Font = Enum.Font.Nunito
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(200, 200, 200)
+TextBox_2.PlaceholderText = "Type Number Here"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 14.000
+TextBox_2.TextWrapped = true
+
+LoopedButton_2.Name = "LoopedButton"
+LoopedButton_2.Parent = JumpPowerButton
+LoopedButton_2.AnchorPoint = Vector2.new(0.5, 0.5)
+LoopedButton_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+LoopedButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LoopedButton_2.BorderSizePixel = 0
+LoopedButton_2.Position = UDim2.new(0.849991679, 0, 1.44066131, 0)
+LoopedButton_2.Size = UDim2.new(0.300017089, 0, 0.499999762, 0)
+LoopedButton_2.Visible = false
+LoopedButton_2.Font = Enum.Font.Nunito
+LoopedButton_2.Text = "Looped"
+LoopedButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoopedButton_2.TextScaled = true
+LoopedButton_2.TextSize = 14.000
+LoopedButton_2.TextWrapped = true
+
+GameViewerScreen.Name = "GameViewerScreen"
+GameViewerScreen.Parent = Bg
+GameViewerScreen.AnchorPoint = Vector2.new(0.5, 0.5)
+GameViewerScreen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GameViewerScreen.BackgroundTransparency = 1.000
+GameViewerScreen.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GameViewerScreen.BorderSizePixel = 0
+GameViewerScreen.Position = UDim2.new(0.5, 0, 0.50000006, 0)
+GameViewerScreen.Size = UDim2.new(0.99999994, 0, 1.00000012, 0)
+GameViewerScreen.Visible = false
+
+Text_5.Name = "Text"
+Text_5.Parent = GameViewerScreen
+Text_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Text_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_5.BackgroundTransparency = 1.000
+Text_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Text_5.BorderSizePixel = 0
+Text_5.Position = UDim2.new(0.499312252, 0, 0.49999997, 0)
+Text_5.Size = UDim2.new(0.775103211, 0, 0.189295068, 0)
+Text_5.Font = Enum.Font.Nunito
+Text_5.Text = "Check Output (F9)"
+Text_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_5.TextScaled = true
+Text_5.TextSize = 14.000
+Text_5.TextWrapped = true
+
+-- Scripts:
+
+local function QSFTG_fake_script() -- MinimizeButton.LocalScript 
+	local script = Instance.new('LocalScript', MinimizeButton)
+
+	local Bg = script.Parent.Parent.Parent.Bg
+	
+	local closed = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if closed == false then
+			closed = true
+			Bg.Visible = false
+		else
+			closed = false
+			Bg.Visible = true
+		end
+	end)
+end
+coroutine.wrap(QSFTG_fake_script)()
+local function YOGOCTF_fake_script() -- Text_2.LocalScript 
+	local script = Instance.new('LocalScript', Text_2)
+
+	local Line1 = script.Parent.Parent.Line1
+	local Line2 = script.Parent.Parent.Line2
+	
+	local TweenService = game:GetService("TweenService")
+	
+	local TextTweenOut = TweenService:Create(script.Parent, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), { TextTransparency = 1 })
+	local BackgroundTweenOut = TweenService:Create(script.Parent.Parent, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), { BackgroundTransparency = 1 })
+	
+	local Line1TweenIn = TweenService:Create(Line1, TweenInfo.new(2, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { Size = UDim2.new(-0.618, 0, 0.035, 0) })
+	local Line2TweenIn = TweenService:Create(Line2, TweenInfo.new(2, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { Size = UDim2.new(-0.618, 0, 0.035, 0) })
+	
+	local Line1TweenOut = TweenService:Create(Line1, TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { BackgroundTransparency = 1 })
+	local Line2TweenOut = TweenService:Create(Line2, TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), { BackgroundTransparency = 1 })
+	
+	if game:IsLoaded() then
+		task.wait(2)
+		Line1TweenIn:Play()
+		Line2TweenIn:Play()
+		Line2TweenIn.Completed:Wait()
+		task.wait(2)
+		TextTweenOut:Play()
+		BackgroundTweenOut:Play()
+		Line1TweenOut:Play()
+		Line2TweenOut:Play()
+		TextTweenOut.Completed:Wait()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.MainScreen.Visible = true
+	end
+end
+coroutine.wrap(YOGOCTF_fake_script)()
+local function CNKBKR_fake_script() -- Text_3.LocalScript 
+	local script = Instance.new('LocalScript', Text_3)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.Text = "Welcome, " .. player.Name .. "."
+end
+coroutine.wrap(CNKBKR_fake_script)()
+local function PLPPI_fake_script() -- HacksScreen.LocalScript 
+	local script = Instance.new('LocalScript', HacksScreen)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.HacksScreen.Visible = true
+	end)
+end
+coroutine.wrap(PLPPI_fake_script)()
+local function ZUDK_fake_script() -- GameScreen.LocalScript 
+	local script = Instance.new('LocalScript', GameScreen)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.GameViewerScreen.Visible = true
+		
+		print("==Workspace==")
+		
+		for i, v in pairs(game.Workspace:GetDescendants()) do
+			
+			print(v.Name .. ":" .. v.ClassName)
+		end
+		
+		print("==ReplicatedStorage==")
+	
+		for i, v in pairs(game.ReplicatedStorage:GetDescendants()) do
+	
+			print(v.Name .. ":" .. v.ClassName)
+		end
+		
+		task.wait(2)
+		script.Parent.Parent.Visible = true
+		script.Parent.Parent.Parent.GameViewerScreen.Visible = false
+	end)
+end
+coroutine.wrap(ZUDK_fake_script)()
+local function GUBQY_fake_script() -- WalkspeedButton.LocalScript 
+	local script = Instance.new('LocalScript', WalkspeedButton)
+
+	local player = game.Players.LocalPlayer
+	
+	local TextBox = script.Parent.TextBox
+	
+	local LoopedButton = script.Parent.LoopedButton
+	
+	local opened = false
+	
+	local looped = false
+	
+	LoopedButton.MouseButton1Click:Connect(function()
+		if looped == false then
+			looped = true
+		else
+			looped = false
+		end
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if opened == false then
+			opened = true
+			script.Parent.UIStroke.Enabled = true
+			TextBox.Visible = true
+			LoopedButton.Visible = true
+		else
+			opened = false
+			script.Parent.UIStroke.Enabled = false
+			TextBox.Visible = false
+			LoopedButton.Visible = false
+		end
+	end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		player.Character:WaitForChild("Humanoid").WalkSpeed = 16
+		looped = false
+		TextBox.Text = "16"
+		LoopedButton.UIStroke.Enabled = false
+		script.Parent.UIStroke.Enabled = false
+		LoopedButton.Visible = false
+		TextBox.Visible = false
+		opened = false
+		script.Parent.Text = "Resetted WalkSpeed"
+		task.wait(1)
+		script.Parent.Text = "Walkspeed (Default is 16)"
+	end)
+	
+	TextBox:GetPropertyChangedSignal("Text"):Connect(function()
+		TextBox.Text = TextBox.Text:gsub('%D+', '');
+	end)
+	
+	TextBox.FocusLost:Connect(function()
+		if looped == false then
+			local character = player.Character
+			if character then
+				character:FindFirstChild("Humanoid").WalkSpeed = TextBox.Text
+			end
+		elseif looped == true then
+			while looped == true do
+				local character = player.Character
+				if character then
+					character:FindFirstChild("Humanoid").WalkSpeed = TextBox.Text
+				end
+				task.wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(GUBQY_fake_script)()
+local function IIJHIV_fake_script() -- LoopedButton.LocalScript 
+	local script = Instance.new('LocalScript', LoopedButton)
+
+	local opened = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if opened == false then
+			opened = true
+			script.Parent.UIStroke.Enabled = true
+		else
+			opened = false
+			script.Parent.UIStroke.Enabled = false
+		end
+	end)
+end
+coroutine.wrap(IIJHIV_fake_script)()
+local function CAITG_fake_script() -- JumpPowerButton.LocalScript 
+	local script = Instance.new('LocalScript', JumpPowerButton)
+
+	local player = game.Players.LocalPlayer
+	
+	local TextBox = script.Parent.TextBox
+	
+	local LoopedButton = script.Parent.LoopedButton
+	
+	local opened = false
+	
+	local looped = false
+	
+	LoopedButton.MouseButton1Click:Connect(function()
+		if looped == false then
+			looped = true
+		else
+			looped = false
+		end
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if opened == false then
+			opened = true
+			script.Parent.UIStroke.Enabled = true
+			TextBox.Visible = true
+			LoopedButton.Visible = true
+		else
+			opened = false
+			script.Parent.UIStroke.Enabled = false
+			TextBox.Visible = false
+			LoopedButton.Visible = false
+		end
+	end)
+	
+	script.Parent.MouseButton2Click:Connect(function()
+		local character = player.Character
+		if character:FindFirstChild("Humanoid").UseJumpPower == true then
+			character:FindFirstChild("Humanoid").JumpPower = TextBox.Text
+			looped = false
+			TextBox.Text = "50"
+			LoopedButton.UIStroke.Enabled = false
+			script.Parent.UIStroke.Enabled = false
+			LoopedButton.Visible = false
+			TextBox.Visible = false
+			opened = false
+			script.Parent.Text = "Resetted JumpPower"
+			task.wait(1)
+			script.Parent.Text = "Jump Power (Default is 50)"
+		end
+	end)
+	
+	TextBox:GetPropertyChangedSignal("Text"):Connect(function()
+		TextBox.Text = TextBox.Text:gsub('%D+', '');
+	end)
+	
+	TextBox.FocusLost:Connect(function()
+		if looped == false then
+			local character = player.Character
+			if character then
+				if character:FindFirstChild("Humanoid").UseJumpPower == true then
+					character:FindFirstChild("Humanoid").JumpPower = TextBox.Text
+				else
+					script.Parent.Text = "This Game uses JumpHeight. Please use the JumpHeight Button."
+					task.wait(1)
+					script.Parent.Text = "Jump Power (Default is 50)"
+				end
+			end
+		elseif looped == true then
+			while looped == true do
+				local character = player.Character
+				if character then
+					character:FindFirstChild("Humanoid").JumpPower = TextBox.Text
+				end
+				task.wait()
+			end
+		end
+	end)
+end
+coroutine.wrap(CAITG_fake_script)()
+local function HODFUZ_fake_script() -- LoopedButton_2.LocalScript 
+	local script = Instance.new('LocalScript', LoopedButton_2)
+
+	local opened = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if opened == false then
+			opened = true
+			script.Parent.UIStroke.Enabled = true
+		else
+			opened = false
+			script.Parent.UIStroke.Enabled = false
+		end
+	end)
+end
+coroutine.wrap(HODFUZ_fake_script)()
+local function QZFZIAN_fake_script() -- H.UIDrag 
+	local script = Instance.new('LocalScript', H)
+
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(QZFZIAN_fake_script)()
